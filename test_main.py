@@ -12,7 +12,9 @@ from main import (
 )
 
 
-dataset = "/Users/chensi/Desktop/MIDS/Fall 2024/IDS 706/HW2/StudentPerformanceFactors.csv"
+dataset = (
+    "/Users/chensi/Desktop/MIDS/Fall 2024/IDS 706/HW2/StudentPerformanceFactors.csv"
+)
 df = load_dataset(dataset)
 def test_load_dataset():
     df_test = load_dataset(dataset)  
