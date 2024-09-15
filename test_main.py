@@ -3,8 +3,13 @@ Test goes here
 
 """
 import pandas as pd
-from main import load_dataset, general_describe, generate_vis, generate_dist, visualize_boxplot
-import matplotlib.pyplot as plt
+from main import (load_dataset, 
+                  general_describe, 
+                  generate_vis, 
+                  generate_dist, 
+                  visualize_boxplot
+)
+
 
 dataset = "/Users/chensi/Desktop/MIDS/Fall 2024/IDS 706/HW2/StudentPerformanceFactors.csv"
 df = load_dataset(dataset)
@@ -52,3 +57,4 @@ if __name__ == "__main__":
     test_generate_dist()
     test_visualize_boxplot()
     print("All tests passed.")
+    
