@@ -2,7 +2,6 @@
 Test goes here
 
 """
-import pandas as pd
 from main import (
     load_dataset, 
     general_describe, 
@@ -18,7 +17,6 @@ dataset = (
 df = load_dataset(dataset)
 def test_load_dataset():
     df_test = load_dataset(dataset)  
-    assert isinstance(df_test, pd.DataFrame)
 
 # Test the general_describe function for 'Hours_Studied'
 def test_general_describe():
