@@ -14,9 +14,8 @@ from main import (
 dataset = (
     "/Users/chensi/Desktop/MIDS/Fall 2024/IDS 706/HW2/StudentPerformanceFactors.csv"
 )
+
 df = load_dataset(dataset)
-def test_load_dataset():
-    df_test = load_dataset(dataset)  
 
 # Test the general_describe function for 'Hours_Studied'
 def test_general_describe():
@@ -52,7 +51,6 @@ def test_visualize_boxplot():
 
 # Run the tests
 if __name__ == "__main__":
-    test_load_dataset()
     test_general_describe()
     test_generate_vis()
     test_generate_dist()
