@@ -12,9 +12,7 @@ from main import (
 )
 
 
-dataset = (
-    "/Users/chensi/Desktop/MIDS/Fall 2024/IDS 706/HW2/StudentPerformanceFactors.csv"
-)
+dataset = "./StudentPerformanceFactors.csv"
 
 df = load_dataset(dataset)
 
