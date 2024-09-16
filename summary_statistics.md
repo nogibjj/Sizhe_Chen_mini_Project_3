@@ -14,3 +14,6 @@
 
 **75th Percentile (75%)**: 24.0
 
+
+
+![generate_dist](Figure_2.png)

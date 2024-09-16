@@ -74,6 +74,8 @@ def save_to_md(summary_stats, column_name):
         file.write(f"**Standard Deviation**: {summary_stats['std']}\n\n")
         file.write(f"**25th Percentile (25%)**: {summary_stats['25%']}\n\n")
         file.write(f"**75th Percentile (75%)**: {summary_stats['75%']}\n\n")
+        file.write("\n\n")  
+        file.write("![generate_dist](Figure_2.png)\n")
 
 
 if __name__ == "__main__":
