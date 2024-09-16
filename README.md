@@ -1,9 +1,8 @@
-[![CI](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-ruff-template/actions/workflows/cicd.yml)
-## Template for Python projects with RUFF linter
+[![CI](https://github.com/jessc0202/Sizhe_Chen_mini_Project_2/actions/workflows/cicd.yml)
+This is my second mini project for the IDS 706 
 
-![1 15_rust_built_python_tools](https://github.com/nogibjj/python-ruff-template/assets/58792/db5f7bda-a977-4c67-acbe-a70fe034fbdf)
-
-
+#Dataset
+This dataset is from Kaggle. And I choose the one called students performance factors which about those factors 
 
 1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
 
@@ -29,9 +28,6 @@ Run `make lint` which runs `ruff check`.  You can find out more info on [Ruff he
 
 * `githubactions`
 
-## References
-
-![1 1-function-essence-of-programming](https://github.com/nogibjj/python-ruff-template/assets/58792/f7f33cd3-cff5-4014-98ea-09b6a29c7557)
 
 
 
