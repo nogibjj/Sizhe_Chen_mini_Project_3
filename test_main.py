@@ -11,7 +11,6 @@ from main import (
     visualize_boxplot
 )
 
-
 dataset = "./StudentPerformanceFactors.csv"
 
 df = load_dataset(dataset)
