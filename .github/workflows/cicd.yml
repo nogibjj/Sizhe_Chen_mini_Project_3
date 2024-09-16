@@ -11,15 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: install packages
         run: make install
-      - name: generate_and_push
-        run: make generate_and_push
+
+      - name: generate
+        run: make generate
+
       - name: test
         run: make test
+
       - name: format
         run: make format
-      - name: deploy
-        run: make deploy
+
       - name: Lint the code
         run: make lint
