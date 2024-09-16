@@ -44,8 +44,8 @@ def visualize_boxplot(df, column):
     plt.show()
 
 def save_to_md():
-    with open("test.md","w") as file:
-        file.write("test")
+    with open("filename.txt", "w", encoding="utf-8") as file:
+        file.write("Some text")
 
 if __name__ == "__main__":
     save_to_md()
