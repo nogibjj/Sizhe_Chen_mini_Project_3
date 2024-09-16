@@ -16,7 +16,7 @@ jobs:
         run: make install
 
       - name: generate
-        run: make generate
+        run: make generate_and_push
 
       - name: test
         run: make test
