@@ -43,9 +43,22 @@ def visualize_boxplot(df, column):
     plt.grid(True)
     plt.show()
 
-def save_to_md():
-    with open("filename.txt", "w", encoding="utf-8") as file:
-        file.write("Some text")
+def save_to_md(summary, column_name):
+    with open("summary_statistics.md", "w", encoding="utf-8") as file:
+        file.write(f"# Summary Statistics for {column_name}\n\n")
+        file.write(f"**Mean**: {summary['mean']}\n\n")
+        file.write(f"**Median (50%)**: {summary['50%']}\n\n")
+        file.write(f"**Max**: {summary['max']}\n\n")
+        file.write(f"**Min**: {summary['min']}\n\n")
+        file.write(f"**Standard Deviation**: {summary['std']}\n\n")
+        file.write(f"**25th Percentile (25%)**: {summary['25%']}\n\n")
+        file.write(f"**75th Percentile (75%)**: {summary['75%']}\n\n")
 
 if __name__ == "__main__":
-    save_to_md()
+    dataset = "StudentPerformanceFactors.csv"
+    column_name = "Hours_Studied"
+    
+    df = load_dataset(dataset)
+    summary = general_describe(df, column_name)
+    
+    save_to_md(summary, column_name)
