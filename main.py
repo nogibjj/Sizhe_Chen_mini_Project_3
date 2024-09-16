@@ -56,9 +56,9 @@ def save_to_md(summary, column_name):
 
 if __name__ == "__main__":
     dataset = "StudentPerformanceFactors.csv"
-    column_name = "Hours_Studied"
+    col = "Hours_Studied"
     
     df = load_dataset(dataset)
-    summary = general_describe(df, column_name)
+    summary = general_describe(df, col)
     
-    save_to_md(summary, column_name)
+    save_to_md(summary, col)
