@@ -10,6 +10,9 @@ lint:
 test:
 	python -m pytest -cov=main test_main.py
 
+deploy:
+	#deploy goes here
+
 all: install format lint test
 
 generate_and_push:
