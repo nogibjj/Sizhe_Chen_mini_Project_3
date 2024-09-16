@@ -13,12 +13,13 @@ test:
 all: install format lint test
 
 generate:
-	python main.py
-	git config --local user.email "action@github.com"; \
-	git config --local user.name "GitHub Action"; \
-	git add .
-	git commit -m "Test"
-	git push
+    python main.py
+    git config --local user.email "action@github.com"; \
+    git config --local user.name "GitHub Action"; \
+    git add .; \
+    git commit -m "Test" || true; \
+    git push || true
+
 
 
 
