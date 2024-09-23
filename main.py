@@ -3,6 +3,7 @@ Main Functions
 """
 import polars as pl
 import matplotlib.pyplot as plt
+from pyinstrument import Profiler
 
 def load_dataset_pl(file_path):
     """
@@ -90,4 +91,14 @@ if __name__ == "__main__":
 
     summary_stats_data = general_describe_pl(df_data, column_to_analyze)
 
+    dataset_path = "StudentPerformanceFactors.csv"
+    column_to_analyze = "Hours_Studied"
+
+    profiler = Profiler()
+
+    with profiler:
+        df_data = load_dataset_pl(dataset_path)
+        summary_stats_data = general_describe_pl(df_data, column_to_analyze)
+
     save_to_md_pl(summary_stats_data, column_to_analyze)
+    save_profiler_to_md(profiler, "profiler_results.md")

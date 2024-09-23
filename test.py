@@ -11,7 +11,6 @@ with Profiler(interval=0.1) as profiler_pandas:
     print("Pandas Stats:", stats_pandas)
 profiler_pandas.print()
 
-# Profiler for Polars
 with Profiler(interval=0.1) as profiler_polars:
     df_polars = load_dataset_pl(dataset_path)
     stats_polars = general_describe_pl(df_polars, 'Hours_Studied')
