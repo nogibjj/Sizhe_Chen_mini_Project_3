@@ -1,3 +1,4 @@
+import pandas as pd
 from pyinstrument import Profiler
 from mylib.lib import load_dataset, general_describe
 from main import load_dataset_pl, general_describe_pl
