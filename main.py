@@ -71,6 +71,17 @@ def save_to_md_pl(summary_stats, column_name):
         for stat, value in summary_stats.items():
             file.write(f"**{stat.capitalize()}**: {value[0]}\n\n")
 
+def save_profiler_to_md(profiler, filename="profiler_results.md"):
+    """
+    Save profiler results to a markdown (.md) file.
+    """
+    with open(filename, "w", encoding="utf-8") as file:
+        file.write("# Profiler Results\n\n")
+        file.write("```\n")
+        file.write(profiler.output_text(unicode=True, color=False))  # Save profiler text results
+        file.write("\n```\n")
+
+
 if __name__ == "__main__":
     dataset_path = "StudentPerformanceFactors.csv" 
     column_to_analyze = "Hours_Studied"

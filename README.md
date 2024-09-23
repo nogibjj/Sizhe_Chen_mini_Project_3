@@ -1,11 +1,12 @@
-[![CI](https://github.com/jessc0202/Sizhe_Chen_mini_Project_2/actions/workflows/cicd.yml/badge.svg)](https://github.com/jessc0202/Sizhe_Chen_mini_Project_2/actions/workflows/cicd.yml)
-This is my second mini project for the IDS 706 
+[![CI](https://github.com/jessc0202/Sizhe_Chen_mini_Project_3/actions/workflows/cicd.yml/badge.svg)](https://github.com/jessc0202/Sizhe_Chen_mini_Project_3/actions/workflows/cicd.yml)
+
+This is my third mini project for the IDS 706 
 
 # **Project Overview**
 This project uses the **Students Performance Factors** dataset from Kaggle, which contains information about factors that can influence student grades. The primary goal of the project is to analyze this dataset by generating descriptive statistics and visualizations to better understand how various factors, such as **hours studied**, affect student performance.
 
 # **Purpose**
-The purpose of this project is to **automate the generation of descriptive statistics and visualizations using Pandas**. The project involves writing Python functions to load the dataset, perform basic statistical analysis, and create plots for visual insights.
+The purpose of this project is to **automate the generation of descriptive statistics and visualizations using Polar**. The project involves writing Python functions to load the dataset, perform basic statistical analysis, and create plots for visual insights.
 
 # **Main Components**
 1. **Data Loading**:

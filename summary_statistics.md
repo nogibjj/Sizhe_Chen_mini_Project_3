@@ -14,3 +14,4 @@
 
 **75%**: 24.0
 
+![histogram](Figure_2.png)

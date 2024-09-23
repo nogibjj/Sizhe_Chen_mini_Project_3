@@ -18,7 +18,7 @@ all: install format lint test
 generate_and_push:
 	# Create the markdown file (assuming it's generated from the plot)
 	python test_main.py 
-
+	python test.py
 	# Add, commit, and push the generated files to GitHub
 	@if [ -n "$$(git status --porcelain)" ]; then \
 		git config --local user.email "action@github.com"; \
