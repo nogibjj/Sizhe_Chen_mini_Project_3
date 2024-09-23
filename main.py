@@ -91,14 +91,13 @@ if __name__ == "__main__":
 
     summary_stats_data = general_describe_pl(df_data, column_to_analyze)
 
-    dataset_path = "StudentPerformanceFactors.csv"
+    profiler_instance = Profiler(interval=0.1)
+    profiler_instance.start()
+
+    dataset_path = "StudentPerformanceFactors.csv" 
     column_to_analyze = "Hours_Studied"
 
-    profiler = Profiler()
-
-    with profiler:
-        df_data = load_dataset_pl(dataset_path)
-        summary_stats_data = general_describe_pl(df_data, column_to_analyze)
-
+    profiler_instance.stop()
+    save_profiler_to_md(profiler_instance, "profiler_results.md")
     save_to_md_pl(summary_stats_data, column_to_analyze)
-    save_profiler_to_md(profiler, "profiler_results.md")
+    
